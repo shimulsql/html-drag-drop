@@ -13,8 +13,7 @@ body{
 .container{
     width: 95%;
     margin: auto;
-    background-color: rgb(243, 243, 243);
-    border: 1px solid rgb(221, 221, 221);
+    background-color: rgb(255, 255, 255);
     margin-top: 20px;
     height: 90vh;
 }
@@ -22,4 +21,64 @@ body{
 h2{
     text-align: center;
     color: rgb(1, 112, 202);
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col{
+    width: 49%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.draggable-items, #drop-area{
+    background-color: rgb(221, 221, 221);
+    height: 300px;
+    width: 100%;
+    padding: 7px;
+    border-radius: 4px;
+}
+
+#drop-area{
+    position: relative;
+}
+#drop-area::before{
+    position: absolute;
+    content: 'drop zone';
+    left: 50%;
+    top: 50%;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+    opacity: .05;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+
+button{
+    padding: 5px 17px;
+    border: none;
+    background-color: rgb(243, 243, 243);
+    font-size: 16px;
+    border-radius: 3px;
+    margin: 6px;
+    cursor: pointer;
+}
+
+.green{
+    background-color: rgb(18, 172, 100);
+    color: azure;
+}
+.red{
+    background-color: rgb(233, 41, 41);
+    color: azure;
+}
+.blue{
+    background-color: rgb(15, 113, 206);
+    color: azure;
 }
